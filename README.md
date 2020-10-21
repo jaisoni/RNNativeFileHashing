@@ -11,11 +11,15 @@ npm install react-native-file-hash
 ## Usage
 
 ```js
-import FileHash from "react-native-file-hash";
+import {NativeModules} from 'react-native';
 
 // ...
 
-const result = await FileHash.multiply(3, 7);
+var FileHash = NativeModules.FileHash;
+FileHash.hashSha(<File Path>, <Encryption Key>)
+  .then((hmac)=>{
+    console.log('File hamc => ', hmac);
+  }
 ```
 
 ## Contributing
