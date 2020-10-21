@@ -1,53 +1,27 @@
+# react-native-file-hash
 
-# react-native-native-file-hashing
+File utility for generating hash mac of file
 
-## Getting started
+## Installation
 
-`$ npm install react-native-native-file-hashing --save`
-
-### Mostly automatic installation
-
-`$ react-native link react-native-native-file-hashing`
-
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-native-file-hashing` and add `RNNativeFileHashing.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNNativeFileHashing.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNNativeFileHashingPackage;` to the imports at the top of the file
-  - Add `new RNNativeFileHashingPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-native-file-hashing'
-  	project(':react-native-native-file-hashing').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-native-file-hashing/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-native-file-hashing')
-  	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNNativeFileHashing.sln` in `node_modules/react-native-native-file-hashing/windows/RNNativeFileHashing.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Native.File.Hashing.RNNativeFileHashing;` to the usings at the top of the file
-  - Add `new RNNativeFileHashingPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
+```sh
+npm install react-native-file-hash
+```
 
 ## Usage
-```javascript
-import RNNativeFileHashing from 'react-native-native-file-hashing';
 
-// TODO: What to do with the module?
-RNNativeFileHashing;
+```js
+import FileHash from "react-native-file-hash";
+
+// ...
+
+const result = await FileHash.multiply(3, 7);
 ```
-  
+
+## Contributing
+
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+
+## License
+
+MIT

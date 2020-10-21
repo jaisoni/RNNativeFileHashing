@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.tsx"],"names":["FileHash","NativeModules"],"mappings":";;;;;;;AAAA;;AAMA,MAAM;AAAEA,EAAAA;AAAF,IAAeC,0BAArB;eAEeD,Q","sourcesContent":["import { NativeModules } from 'react-native';\n\ntype FileHashType = {\n  multiply(a: number, b: number): Promise<number>;\n};\n\nconst { FileHash } = NativeModules;\n\nexport default FileHash as FileHashType;\n"]}
