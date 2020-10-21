@@ -1,6 +1,6 @@
 # react-native-file-hash
 
-File utility for generating hash mac of file
+File utility for generating hash mac of file. Currently it suppport hmacsha256 for ios only.
 
 ## Installation
 
